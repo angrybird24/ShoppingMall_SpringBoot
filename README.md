@@ -8,10 +8,16 @@ DB: [ MYSQL 사용 ]
 
 이책 주요특징
 Spring Boot 프로젝트 기본설정
+
 Spring Data JPA 에 대한 기본 예제 수록
+
 JUnit 을 이용한 테스트 코드 작성
+
 Thymeleaf 를 이용한 화면 구성
+
 Spring Security 를 이용한 회원 인증 및 인가 기능 구현
+
+
 
 
 기능 내용
