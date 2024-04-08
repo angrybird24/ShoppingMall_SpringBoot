@@ -7,7 +7,7 @@ import lombok.Setter;
 @Entity
 @Getter@Setter
 @Table(name="car_item")
-public class CartItem {
+public class CartItem extends BaseEntity{
     @Id
     @GeneratedValue
     @Column(name = "cart_item_id")
@@ -22,4 +22,22 @@ public class CartItem {
     private Item item;
 
     private int count;
+
+
+    public static CartItem createCartItem(Cart cart , Item item, int count){
+        CartItem cartItem = new CartItem();
+        cartItem.setCart(cart);
+        cartItem.setItem(item);
+        cartItem.setCart(cart);
+        return cartItem;
+    }
+
+    public void addCount(int count){
+        this.count = count;
+
+    }
+
+    public void updateCount(int count){
+        this.count = count;
+    }
 }
